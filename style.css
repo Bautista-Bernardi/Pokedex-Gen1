@@ -1,0 +1,108 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f3f6;
+    color: #222;
+}
+
+header {
+    background: #e63946;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input {
+    width: 280px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
+    gap: 20px;
+    padding: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px #0001;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.card h2 {
+    text-transform: capitalize;
+}
+
+.tipo {
+    display: inline-block;
+    background: #e9ecef;
+    padding: 6px 12px;
+    border-radius: 15px;
+    margin: 4px;
+}
+
+#mensaje {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .filtros {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+

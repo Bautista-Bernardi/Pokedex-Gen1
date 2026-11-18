@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pokedex</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Pokedex</h1>
+        <p>Explorá el mundo Pokémon</p>
+    </header>
+
+    <main>
+
+        <section class="filtros">
+
+            <input
+                type="text"
+                id="buscador"
+                placeholder="Buscar Pokémon..."
+            >
+
+            <select id="filtroTipo">
+                <option value="">Todos los tipos</option>
+                <option value="fire">Fuego</option>
+                <option value="water">Agua</option>
+                <option value="grass">Planta</option>
+                <option value="electric">Eléctrico</option>
+                <option value="normal">Normal</option>
+                <option value="psychic">Psíquico</option>
+                <option value="rock">Roca</option>
+                <option value="ground">Tierra</option>
+                <option value="poison">Veneno</option>
+                <option value="flying">Volador</option>
+            </select>
+
+        </section>
+
+        <p id="mensaje"></p>
+
+        <section id="contenedorPokemon" class="contenedor">
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
